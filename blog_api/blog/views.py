@@ -10,9 +10,8 @@ from .serializers import *
 @api_view(['GET'])
 def apiOverview(request):
     api_urls = {
-        'List': '/post-list/',
+        'List': '/post-list-create/',
         'Detail View': '/post-detail/<str:pk>/',
-        'Create': '/post-create/',
         'Update': '/post-update/<str:pk>/',
         'Delete': '/post-delete/<str:pk>/',
         }
