@@ -12,4 +12,5 @@ urlpatterns = [
 
     path('', views.apiOverview, name="api-overview"),
     path('post-list-create/', views.postlist, name="post-list"),
+    path('post-get-update-delete/<str:pk>/', views.postdetail, name='post-detail')
 ]
